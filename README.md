@@ -22,7 +22,7 @@ There are a lot of resolutions for flutter's state managing.
 
 `redux_dart` and `BloC` are both great libs to start with.
 
-`redux_dart` is mainly for react developers, but it's not easy to configure, especially they are not javascript developers originally.
+`redux_dart` is mainly for react developers, but it's not easy to configure, especially when people are not javascript developers originally.
 
 `Bloc` is using `rxdart` and using the `Stream/Sink` related solotions, which is recommended by Flutter official.
 
