@@ -1,7 +1,1 @@
-# dva_flutter_example
-
-A new Flutter project.
-
-## Getting Started
-
-todo, please wait
+To make this library pure, please wait for example
