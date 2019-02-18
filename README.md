@@ -42,8 +42,8 @@ It might work in a way.
 
 So we use several parts to solve the problem.
 
-- Provider -- `dva_flutter`
-- Connector -- `dva_flutter`
+- DvaProvider -- `dva_flutter`
+- DvaConnector -- `dva_flutter`
 - DvaModel -- `dva_dart`
 - DvaStore -- `dva_dart`
 - DvaEffect (PutEffect, CallEffect) -- `dva_dart`
