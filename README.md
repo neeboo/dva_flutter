@@ -2,6 +2,20 @@
 
 Combine BloC and dva_dart together
 
+## Getting Started
+
+1. Read `Concept` first.
+2. Wait for example, please.
+
+This project is a starting point for a Dart
+[package](https://flutter.io/developing-packages/),
+a library module containing code that can be shared easily across
+multiple Flutter or Dart projects.
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.io/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
 ## Concept
 
 There are a lot of resolutions for flutter's state managing.
@@ -36,14 +50,3 @@ So we use several parts to solve the problem.
 - DvaState -- `dva_dart`
 - Action -- `dva_dart`
 - Payload -- `dva_dart`
-
-## Getting Started
-
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.io/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
