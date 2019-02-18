@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:dva_dart/dva_dart.dart' hide State;
+import 'package:dva_dart/dva_dart.dart';
 import 'package:flutter/widgets.dart';
 import 'provider.dart';
 

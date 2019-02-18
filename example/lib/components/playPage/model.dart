@@ -3,7 +3,7 @@ import 'state.dart';
 
 DvaModel playPageModel =
     DvaModel(nameSpace: 'play', initialState: PlayerState.initial(), reducers: {
-  'updateState': (State state, Payload<PlayerState> payload) {
+  'updateState': (DvaState state, Payload<PlayerState> payload) {
     return payload.payload;
   }
 }, effects: {

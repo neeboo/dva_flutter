@@ -1,6 +1,6 @@
 name: dva_flutter
 description: A state manager combining the ideas from dva.js and rxdart, bloc, with the dependency of dva_dart.
-version: 0.0.3
+version: 0.0.4
 author: neeboo<neeboo@gmail.com>
 homepage: https://github.com/neeboo/dva_flutter
 
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dva_dart: ^0.0.24
+  dva_dart: ^0.0.25
 
 dev_dependencies:
   flutter_test:

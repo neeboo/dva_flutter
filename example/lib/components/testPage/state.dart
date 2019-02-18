@@ -1,11 +1,11 @@
-import 'package:dva_dart/dva_dart.dart' as Dva;
+import 'package:dva_dart/dva_dart.dart';
 
-class CounterState implements Dva.State<int> {
+class CounterState implements DvaState<int> {
   final int counter;
   CounterState(this.counter);
 }
 
-class CounterString implements Dva.State<String> {
+class CounterString implements DvaState<String> {
   final String counter;
   CounterString(this.counter);
 }

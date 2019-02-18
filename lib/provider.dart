@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:dva_dart/dva_dart.dart' as dva;
+import 'package:dva_dart/dva_dart.dart';
 
 abstract class DvaBase {
   void dispose();
 }
 
 // Modify bloc to Dva extends dva.DvaStore
-class DvaProvider<T extends dva.DvaStore> extends StatefulWidget {
+class DvaProvider<T extends DvaStore> extends StatefulWidget {
   DvaProvider({
     Key key,
     @required this.child,
@@ -19,7 +19,7 @@ class DvaProvider<T extends dva.DvaStore> extends StatefulWidget {
   @override
   _DvaProviderState<T> createState() => _DvaProviderState<T>();
 
-  static T of<T extends dva.DvaStore>(BuildContext context) {
+  static T of<T extends DvaStore>(BuildContext context) {
     final type = _typeOf<DvaProvider<T>>();
     DvaProvider<T> provider = context.ancestorWidgetOfExactType(type);
     return provider.store;
@@ -28,7 +28,7 @@ class DvaProvider<T extends dva.DvaStore> extends StatefulWidget {
   static Type _typeOf<T>() => T;
 }
 
-class _DvaProviderState<T> extends State<DvaProvider<dva.DvaStore>> {
+class _DvaProviderState<T> extends State<DvaProvider<DvaStore>> {
   @override
   void dispose() {
     widget.store.dispose();

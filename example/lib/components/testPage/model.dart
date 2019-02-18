@@ -4,7 +4,7 @@ import '../../services/thumb.dart';
 
 DvaModel counterPageModel =
     DvaModel(nameSpace: 'counter', initialState: CounterState(0), reducers: {
-  'updateState': (State<int> state, Payload<int> payload) {
+  'updateState': (DvaState<int> state, Payload<int> payload) {
     return CounterState(payload.payload);
   },
 }, effects: {

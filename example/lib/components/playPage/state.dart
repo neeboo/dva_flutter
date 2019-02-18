@@ -1,6 +1,6 @@
 import 'package:dva_dart/dva_dart.dart';
 
-class PlayerState implements State {
+class PlayerState implements DvaState {
   final bool isInitial;
   final bool isPlaying;
   final bool isPaused;
