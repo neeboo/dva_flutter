@@ -11,17 +11,15 @@ typedef DvaDispatch<T> = void Function(T action);
 class DvaConnector<M> extends ConnectorBase {
   final DvaWidgetBuilder<BuildContext, DvaModels, DvaDispatch<Action>> builder;
   final List<String> listenTo;
-  final List<String> mapStateToProps;
   final BuildContext context;
 
   DvaStore get _store => DvaProvider.of(context);
 
   DvaConnector(
       {Key key,
-      this.builder,
-      this.listenTo,
-      this.mapStateToProps,
-      this.context})
+      @required this.builder,
+      @required this.listenTo,
+      @required this.context})
       : super(key: key, listenTo: listenTo, context: context);
 
   @override
