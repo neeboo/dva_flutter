@@ -183,17 +183,17 @@ class MyApp extends StatelessWidget {
         theme: new ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: PlayPage(),
+        home: CounterPage(),
       ),
       store: store,
     );
   }
 }
 
-class PlayPage extends StatelessWidget {
+class CounterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return playPageContainer(context: context);
+    return counterPageContainer(context: context);
   }
 }
 
