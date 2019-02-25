@@ -77,9 +77,9 @@ Widget counterPageContainer({context}) {
         title: 'Counter',
         counter: counterState.counter,
         asyncAdd: (int counter) => dispatch(
-            createAction('counter/asyncAdd')(Dva.Payload(counter))),
+            createAction('counter/asyncAdd')(Payload(counter))),
         asyncMinus: (int counter) => dispatch(
-            createAction('counter/asyncMinus')(Dva.Payload(counter))),
+            createAction('counter/asyncMinus')(Payload(counter))),
       );
     },
   );
