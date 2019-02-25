@@ -193,7 +193,7 @@ class MyApp extends StatelessWidget {
 class PlayPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return playPageContainer(context: context, routeTo: TestPage());
+    return playPageContainer(context: context);
   }
 }
 
