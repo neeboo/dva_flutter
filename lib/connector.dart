@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:dva_dart/dva_dart.dart';
+import 'package:dva_dart/dva_dart.dart' as DvaDart;
 import 'package:flutter/widgets.dart';
 import 'provider.dart';
 
@@ -9,11 +9,12 @@ typedef DvaWidgetBuilder<B, S, D> = Widget Function(
 typedef DvaDispatch<T> = void Function(T action);
 
 class DvaConnector<M> extends ConnectorBase {
-  final DvaWidgetBuilder<BuildContext, DvaModels, DvaDispatch<Action>> builder;
+  final DvaWidgetBuilder<BuildContext, DvaModels, DvaDispatch<DvaDart.Action>>
+      builder;
   final List<String> listenTo;
   final BuildContext context;
 
-  DvaStore get _store => DvaProvider.of(context);
+  DvaDart.DvaStore get _store => DvaProvider.of(context);
 
   DvaConnector(
       {Key key,
@@ -41,7 +42,7 @@ abstract class ConnectorBase<M> extends StatefulWidget {
 
 class _ConnectorBase<M> extends State<ConnectorBase<M>> {
   List<String> _listenTo;
-  DvaStore _store;
+  DvaDart.DvaStore _store;
   List<ListenModel<Stream, M>> _listenModels;
 
   @override
