@@ -92,18 +92,19 @@ class _ConnectorBase<M> extends State<ConnectorBase<M>> {
   @override
   Widget build(BuildContext context) => widget.build(context, _listenModels);
 
-  // @override
-  // void didUpdateWidget(ConnectorBase<M> oldWidget) {
-  //   super.didUpdateWidget(oldWidget);
-  //   _unsubscribe();
-  // if (oldWidget.bloc.state != widget.bloc.state) {
-  //   if (_subscription != null) {
-  //     _unsubscribe();
-  //     _state = widget.bloc.currentState;
-  //   }
-  //   _subscribe();
-  // }
-  //}
+  @override
+  void didUpdateWidget(ConnectorBase<M> oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    _unsubscribe();
+    // oldWidget.
+    // if (oldWidget.bloc.state != widget.bloc.state) {
+    //   if (_subscription != null) {
+    //     _unsubscribe();
+    //     _state = widget.bloc.currentState;
+    //   }
+    //   _subscribe();
+    // }
+  }
 }
 
 class ListenModel<S, M> {
